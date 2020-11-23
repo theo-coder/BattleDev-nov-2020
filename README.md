@@ -2,11 +2,7 @@
     <img src="https://www.shareicon.net/data/512x512/2015/11/09/669182_terminal_512x512.png" width="50px">
 </p>
 <h1 align="center">BattleDev HelloWork - 26 novembre 2020</h1>
-<div align="center">
 
-<iframe src="http://free.timeanddate.com/countdown/i7k5qqtj/n1281/cf100/cm0/cu4/ct1/cs1/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw192/szh81/tatD%C3%A9but%20dans/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2020-11-26T20:00:00" allowTransparency="true" frameborder="0" width="192" height="81"></iframe>
-
-</div>
 <div align="center">
 
 [![NodeJS](https://img.shields.io/badge/nodejs-v14.13.1-009D28.svg?style=for-the-badge&logo=node.js)](https://nodejs.org/)
