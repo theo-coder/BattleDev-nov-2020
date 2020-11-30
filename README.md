@@ -17,6 +17,7 @@
 - [📝 Table des matières](#-table-des-matières)
 - [📚 Présentation du projet <a name = "description"></a>](#-présentation-du-projet-)
 - [📜 Exercice 1 <a name="ex1"></a>](#-exercice-1-)
+- [📜 Exercice 2 <a name="ex2"></a>](#-exercice-2-)
 - [👨‍👦‍👦 Liste des participants <a name="credits"></a>](#-liste-des-participants-)
 
 ## 📚 Présentation du projet <a name = "description"></a>
@@ -47,6 +48,26 @@ function ContestResponse(){
   }
   // Affichage de la réponse
   console.log(res)
+}
+```
+
+## 📜 Exercice 2 <a name="ex2"></a>
+
+Après, dans l'exercice 1 avoir analyser les comptes suspects, il fallait se pencher sur les tweets. L'entrée nous donnait plusieurs heures de posts. Si la quantité de posts était supérieure la nuit, alors le compte était considéré comme suspect, et ainsi il fallait renvoyer la chaine 'SUSPICIOUS' sinon il fallait renvoyer la chaine 'OK'. Pour cela Il fallait simplement vérifier si l'heure de post était supérieure ou égale à 20 ou strictement inférieure à 8. Et ainsi vérifier que plus de la moitié des posts étaient postés la nuit.
+
+```js
+function ContestResponse(){
+    // Initialise le compteur
+    let count = 0
+    // Boucle sur les entrées
+    for(let i=1; i<input[0]; i++){
+        // Assigne les heures à h et les minutes à m
+        let [h, m] = input[i].split(':')
+        // Vérifie si les heures sont comprises entre 8 et 19 et ajoute 1 au compteur
+        if((h >= 20) || (h < 8)) { count++ }
+    }
+    // Vérifie si le compteur est supérieur à la moitié du nombre d'entrées et affiche le résultat
+    count > (input[0]/2) ? console.log('SUSPICIOUS') : console.log("OK")
 }
 ```
 
