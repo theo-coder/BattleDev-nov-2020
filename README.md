@@ -25,6 +25,31 @@ Liste de nos travaux pour la BattleDev du 26 novembre 2020 en langage NodeJS
 
 ## 📜 Exercice 1 <a name="ex1"></a>
 
+L'exercice 1 consistait à vérifier le nombre de comptes followers de Dolan Grump considérés comme suspect. Pour qu'un compte soit suspect il fallait que les 5 derniers caractères de son nom soient des nombres. Pour ceci l'approche à été de boucler sur l'ensembles des chaines d'entrée puis sur chacun des 5 derniers caractères pour vérifier leur type. Ainsi le résultat était le nombre de comptes suspect.
+
+```js
+function ContestResponse(){
+    // Le premier input correspondant au nombre de comptes à vérifier
+    let n = input[0];
+    // La variable qui servira à la réponse
+    let res = 0;
+    // Boucle sur l'ensemble des comptes
+    for(let i=1;i<=n;i++){
+        // La variable qui compte la quantité de nombre dans les 5 derniers caractères
+        let count = 0;
+        // Boucle sur les 5 derniers caractères
+        for(let j=input[i].length; j >= input[i].length-5; j--){
+            // Vérification du type
+            Number.isInteger(parseInt(input[i][j])) && count++
+        }
+    // Vérification de la quantité de nombres
+    count === 5 && res++
+  }
+  // Affichage de la réponse
+  console.log(res)
+}
+```
+
 ## 👨‍👦‍👦 Liste des participants <a name="credits"></a>
 
 [![TheoCoder](https://img.shields.io/badge/theocoder-visit-blue.svg?style=for-the-badge&logo=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAZABkDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABQYAAgQI/8QAKxAAAQMDAwIDCQAAAAAAAAAAAQIDBAAFERIhMQZREzKBFCNBQmFxkaGx/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIDBAf/xAAeEQACAwACAwEAAAAAAAAAAAABAgADEQQhE0GBkf/aAAwDAQACEQMRAD8A4G6fsKr7JLZfRFaSQFPOAkAk4A237n0NbD05bPbA2OpoBY05L3gv89tPh5rfY06E2cxd8FbyBxrlJ8qVdsDGO9alNMwL/aHZMWJIcTbH332kx20tqdSJBAKAnScaUjj5a63XxiUDDPv7GRNEXuoem1WLwVoktTY7oBS8z5dwFD7ZBB335yARQX0/VOt0fVOM0zEobzCaVIS0gIQ06kBLYSkbA4AGkYHNJeaycirxtkmRhhewXtFpcUl9kvsEhwJB3QscKGfWisXqu2RZkN4W991cdhxguvPBRUFlwk6QAM+8I5x9M0qVKVbmChT6gDZ1Ct2uzUpgMRg6ELcLzy3iNTiz3x8AP7Qn81O1XqT2NYdMBO9z/9k=)](https://github.com/theo-coder)
