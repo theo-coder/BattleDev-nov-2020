@@ -53,7 +53,7 @@ function ContestResponse(){
 
 ## 📜 Exercice 2 <a name="ex2"></a>
 
-Après, dans l'exercice 1 avoir analyser les comptes suspects, il fallait se pencher sur les tweets. L'entrée nous donnait plusieurs heures de posts. Si la quantité de posts était supérieure la nuit, alors le compte était considéré comme suspect, et ainsi il fallait renvoyer la chaine 'SUSPICIOUS' sinon il fallait renvoyer la chaine 'OK'. Pour cela Il fallait simplement vérifier si l'heure de post était supérieure ou égale à 20 ou strictement inférieure à 8. Et ainsi vérifier que plus de la moitié des posts étaient postés la nuit.
+Après, dans l'exercice 1 avoir analysé les comptes suspects, il fallait se pencher sur les tweets. L'entrée nous donnait plusieurs heures de posts. Si la quantité de posts était supérieure la nuit, alors le compte était considéré comme suspect, et ainsi il fallait renvoyer la chaine 'SUSPICIOUS' sinon il fallait renvoyer la chaine 'OK'. Pour cela Il fallait simplement vérifier si l'heure de post était supérieure ou égale à 20 ou strictement inférieure à 8. Et ainsi vérifier que plus de la moitié des posts étaient postés la nuit.
 
 ```js
 function ContestResponse(){
